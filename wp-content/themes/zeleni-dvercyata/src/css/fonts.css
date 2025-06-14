@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Neucha";
+  src: url('../fonts/Neucha/Neucha-Regular.woff2') format('woff2'),
+  url("../fonts/Neucha/Neucha-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

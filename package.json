@@ -1,0 +1,16 @@
+{
+  "name": "wp-zeleni-dveri",
+  "version": "1.0.0",
+  "description": "shcool for children",
+  "main": "index.js",
+  "author": "Yaroslav Baronin",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "@prettier/plugin-php": "^0.22.4"
+  },
+  "scripts": {
+    "prettier": "prettier",
+    "format": "prettier --write \"./wp-content/themes/zeleni-dvercyata/**/*.{php,css,js}\""
+  }
+}

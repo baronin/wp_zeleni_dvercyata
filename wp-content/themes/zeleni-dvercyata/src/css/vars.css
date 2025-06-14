@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #309B19;
+  --color-light: #fff;
+  --color-dark: #000;
+
+  --bg-primary: #2D9218;
+  --bg-light: #fff;
+
+  --primary-font: "Montserrat", serif;
+  --secondary-font: "Neucha", serif;
+
+  --font-size-body: clamp(15px, 2vw, 21px);
+  --font-size-title: clamp(40px, 5vw, 68px);
+}

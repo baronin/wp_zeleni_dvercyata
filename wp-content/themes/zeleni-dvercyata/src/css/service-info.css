@@ -1,0 +1,43 @@
+.service-info {
+  padding: 0 20px 20px;
+}
+
+.service-info a {
+  color: var(--color-primary);
+}
+
+.service-info__desc {
+  padding-top: 156px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-family: var(--secondary-font);
+}
+
+.service-info__price-from {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-primary);
+}
+
+
+.service-info__label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: var(--bg-primary);
+  color: var(--color-light);
+  border-radius: 0 0 5px 5px;
+}
+
+.service-info__btn-learn-more {
+  margin-top: 15px;
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-light);
+  background-color: #A7C62C;
+  cursor: pointer;
+}
