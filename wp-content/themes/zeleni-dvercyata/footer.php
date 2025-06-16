@@ -20,9 +20,9 @@
         </div>
     </footer>
     </div>
-        <script type="module" src="../js/vendor/modernizr-3.11.2.min.js" ></script>
+        <!-- <script type="module" src="../js/vendor/modernizr-3.11.2.min.js" ></script>
         <script type="module" src="../js/plugins.js"></script>
-        <script type="module" src="../js/main.js"></script>
+        <script type="module" src="../js/main.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRGBGNLR49"></script>

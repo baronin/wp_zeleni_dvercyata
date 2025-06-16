@@ -17,12 +17,13 @@
   <meta name="mobile-web-app-capable" content="yes">
 
 
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" type="image/x-icon" href="../img/logo.ico">
+  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+  <!-- <link rel="icon" type="image/x-icon" href="../img/logo.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="../img/web-manifest/180.png">
-  <link rel="stylesheet" href="../css/index.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fafafa"> -->
+  
+  <?php wp_head(); ?>
   <meta name="msvalidate.01" content="6E66B84C9D621D10DFCCC502E31FD223" />
 </head>
 
@@ -33,13 +34,10 @@
         <div class="container header__container d-flex justify-content-between">
             <div class="header__social">
                 <a href="https://www.instagram.com/zeleni_dveri/" target="_blank" class="header__social-link">
-                <img src="../img/instagram.svg" width="30" alt="instagram">
-                </a>
-                <a href="https://www.instagram.com/u_farbah/?igshid=MTk0NTkyODZkYg%3D%3D" target="_blank" class="header__social-link">
-                <img src="../img/instagram.svg" width="30" alt="instagram">
+                <img src="<?php echo get_template_directory_uri(); ?>/src/img/instagram.svg" width="30" alt="instagram">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100090750423402" class="header__social-link" target="_blank">
-                <img src="../img/facebook.svg" width="30" alt="facebook">
+                <img src="<?php echo get_template_directory_uri(); ?>/src/img/facebook.svg" width="30" alt="facebook">
                 </a>
             </div>
             <div class="header__menu">

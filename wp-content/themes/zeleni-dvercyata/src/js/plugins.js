@@ -1,10 +1,13 @@
 // Place any jQuery/helper plugins in here.
 // import gallery from './light-gallery';
-import dialogInfo from './dialog-info';
-import showCookieBanner from './accept-cookie';
-import serviceList from './service-list';
+console.log('plugins.js');
+
+import dialogInfo from './dialog-info/index.js';
+import showCookieBanner from './accept-cookie.js';
+import serviceList from './service-list.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
+  console.log('plugins.js 2');
   serviceList();
   const copyRightYear = document.querySelector('#footer__copyright-year');
   if (copyRightYear) {
