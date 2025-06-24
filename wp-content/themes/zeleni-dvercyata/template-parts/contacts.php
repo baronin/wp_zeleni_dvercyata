@@ -22,14 +22,12 @@ $options = get_theme_options();
 // 4. Для удобства извлечем все нужные нам данные в переменные.
 $contact_phone   = $options['contact_phone'] ?? '';
 $phone_href      = $options['phone_href'] ?? '';
+$working_hours_structured = $options['working_hours_structured'];
 
 $contact_info    = $options['contact_info'] ?? [];
 $city            = $contact_info['contact_city'] ?? '';
 $street          = $contact_info['contact_street'] ?? '';
 $google_map_link = $contact_info['contact_google_maps'] ?? '';
-
-$working_hours_structured   = get_field('working_hours_structured') ?? [];
-
 
 ?>
     <address class="contacts-address">
@@ -60,7 +58,8 @@ $working_hours_structured   = get_field('working_hours_structured') ?? [];
                     <?php
                     // Выводим все строки расписания из поля Repeater
                     foreach ($working_hours_structured as $i => $row) {
-                        echo esc_html($row['days']) . ' ' . esc_html($row['working_time']);
+                        echo esc_html($row['working_days']) . ' ' . esc_html($row['working_time']);
+
                         // Добавляем <br>, если это не последняя строка
                         if ($i < count($working_hours_structured) - 1) {
                             echo '<br>';
