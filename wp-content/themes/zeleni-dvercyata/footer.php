@@ -3,20 +3,10 @@
         <h2 class="footer__title">
             Центр дитячого розвитку, корекції та реабілітації "Зелені Дверцята"
         </h2>
-        <address>
-            <a href="https://maps.app.goo.gl/GArH7NuYUuumCR7B7" target="_blank">
-            м. Кременчук,<br>
-            вул. Майора Борщака, 12
-            </a>
-            <div>
-            пн-сб 8:00 до 20:30 <br>
-            нед. - вихідний
-            </div>
-            <a href="tel:+380977050040">097 705 00 40</a>
-        </address>
+        
         <p>© <span id="footer__copyright-year" class="footer__copyright-year"><?php the_time('Y'); ?> Центр дитячого розвитку, корекції та реабілітації "Зелені Дверцята"</span> - Всі права захищені</p>
-        <p class="footer__site-create-by">Сайт cтворив <a href="https://baronin.github.io" target="_blank">Yaroslav Baronin</a></p>
-        <p class="footer__site-create-by">Дизайнер сайту <a href="mailto:mostovenko.pro@gmail.com" target="_blank">Vitaliy Mostovenko</a></p>
+        <div class="footer__site-create-by">
+            <p>Сайт cтворив <a href="https://baronin.github.io" target="_blank">Yaroslav Baronin</a>, дизайнер сайту <a href="mailto:mostovenko.pro@gmail.com" target="_blank">Vitaliy Mostovenko</a></p>
         </div>
     </footer>
     </div>

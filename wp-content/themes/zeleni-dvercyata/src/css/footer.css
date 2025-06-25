@@ -36,6 +36,11 @@
 }
 
 .footer__site-create-by {
+  display: flex;
+}
+
+.footer__site-create-by p {
   margin-top: 0;
   font-size: 13px;
+  line-height: 1.4;
 }

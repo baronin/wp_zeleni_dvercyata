@@ -41,6 +41,14 @@
                 </a>
             </div>
             <div class="header__menu">
+                <?php
+                    wp_nav_menu([
+                        'theme_location' => 'header-menu',
+                        'menu_class' => 'header-menu',
+                        'container' => 'nav',
+                        'container_class' => 'header__nav',
+                    ]);
+                ?>
                 <nav class="header__nav ">
                     <ul class="header__list">
                         <li class="header__item"><a href="#">Головна</a></li>

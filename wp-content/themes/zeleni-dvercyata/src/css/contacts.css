@@ -24,33 +24,25 @@
   }
 }
 
-.address-list {
-  position: relative;
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.address-list svg {
+.contacts-address__item svg {
   display: inline-block;
   width: auto;
   margin: 0 auto 10px;
 }
 
-.address-list li {
+.contacts-address__item {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.address-list a {
+.contacts-address__item a {
   text-decoration: none;
   color: var(--color-dark);
 }
 
-.address-list__phone {
+.contacts-address__phone {
   font-size: 20px;
 }
 
