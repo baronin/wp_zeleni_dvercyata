@@ -28,7 +28,7 @@
 
 $options = get_theme_options();
 $main_about_us = $options['main_about_us'];
-$about_us = $options['about_us']
+$about_us = $options['about_us'];
 
 ?>
 
