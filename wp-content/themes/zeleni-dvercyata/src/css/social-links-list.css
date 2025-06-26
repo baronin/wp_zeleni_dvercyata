@@ -1,0 +1,14 @@
+.social-links-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-links-list__item {
+  margin-left: 20px;
+}
+
+.social-links-list__item:first-child {
+  margin-left: 0;
+}

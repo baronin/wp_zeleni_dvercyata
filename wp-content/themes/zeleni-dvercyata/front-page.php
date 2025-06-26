@@ -1,31 +1,6 @@
 <?php get_header(); ?>
 
 <?php
-// $main_about_us = get_field('main_about_us');
-// $about_us = get_field('about_us');
-// $contact_phone = get_field('contact_phone') ?? '';
-// $phone_href = '';
-// $google_map_link = get_field('google_map_link');
-
-// $contact_info = get_field('contact_info');
-// $schedule_rows = get_field('working_hours_structured');
-
-//   if ($contact_phone) {
-//     $phone_cleaned = preg_replace('/[^0-9]/', '', $contact_phone);
-//     // Если номер начинается с 0 (стандарт для Украины), заменяем 0 на +380
-//     if (substr($phone_cleaned, 0, 1) === '0') {
-//       $phone_href = '+38' . $phone_cleaned;
-//     }
-//     // Если номер уже введен в международном формате, просто используем его
-//     elseif (substr($phone_cleaned, 0, 2) === '38') {
-//       $phone_href = '+' . $phone_cleaned;
-//     }
-//     // В остальных случаях (например, просто 97...), добавляем код страны
-//     else {
-//       $phone_href = '+380' . $phone_cleaned;
-//     }
-//   }
-
 $options = get_theme_options();
 $main_about_us = $options['main_about_us'];
 $about_us = $options['about_us'];
@@ -33,6 +8,7 @@ $about_us = $options['about_us'];
 ?>
 
 <main class="main">
+  <!-- HERO block -->
     <section class="hero color-font-primary">
       <div class="container hero__container">
         <div class="hero__logo-wrap">
@@ -48,9 +24,9 @@ $about_us = $options['about_us'];
         <?php } ?>
       </div>
     </section>
-    <hr>
+    <!-- END hero block -->
 
-    <hr>
+    <!-- Our Services block -->
     <section class="our-service">
       <div class="container">
         <h2 class="title">Наші послуги</h2>
@@ -487,6 +463,9 @@ $about_us = $options['about_us'];
         </ul>
       </div>
     </section>
+    <!-- END Our Services block -->
+
+    <!-- About Us block -->
     <div class="about">
       <div class="container">
         <?php if ($about_us) { ?>
@@ -494,6 +473,7 @@ $about_us = $options['about_us'];
         <?php } ?>
       </div>
     </div>
+    <!-- END About Us block -->
 
     <!-- Contact info -->
     <section class="contacts">
@@ -506,6 +486,7 @@ $about_us = $options['about_us'];
       </div>
       <iframe class="address-list__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.4449123211731!2d33.412942698449456!3d49.06902441962153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75326b31c653d%3A0xb0bf30888fdc31a!2z0YPQuy4g0JzQsNC50L7RgNCwINCR0L7RgNC40YnQsNC60LAsIDEyLCDQmtGA0LXQvNC10L3Rh9GD0LMsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzOTYwMA!5e0!3m2!1sru!2sua!4v1697393460645!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+    <!-- END Contact info block -->
   </main>
 
 <?php get_footer(); ?>

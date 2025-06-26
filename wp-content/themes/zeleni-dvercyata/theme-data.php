@@ -26,6 +26,8 @@
     $google_map_link = get_field('google_map_link', 'option') ?? '';
     $working_hours_structured   = get_field('working_hours_structured') ?? [];
     $service_background_card = get_field('service_background_card');
+    $social_links = get_field('social_links', 'option') ?? [];
+
 
 
     // Обработка номера телефона
@@ -49,7 +51,8 @@
         'phone_href' => $phone_href,
         'google_map_link' => $google_map_link,
         'working_hours_structured' => $working_hours_structured,
-        'service_background_card' => $service_background_card
+        'service_background_card' => $service_background_card,
+        'social_links' => $social_links,
     ];
 
     return $cached_options;
