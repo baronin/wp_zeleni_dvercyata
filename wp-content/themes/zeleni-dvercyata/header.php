@@ -32,6 +32,7 @@
 <div class="app">
     <header class="header">
         <div class="container header__container d-flex justify-content-between">
+            <?php the_custom_logo(); ?>
             <div class="header__social">
                 <?php get_template_part('template-parts/social-icons'); ?>
             </div>

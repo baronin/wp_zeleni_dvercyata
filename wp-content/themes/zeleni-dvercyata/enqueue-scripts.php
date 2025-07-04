@@ -1,5 +1,15 @@
 <?php
 function theme_enqueue_scripts() {
+  add_theme_support(('custom-logo'), [
+        'height' => 100,
+        'width' => 100,
+        'flex-height' => true,
+        'flex-width' => true,
+    ]);
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+
+
     $theme_directory = get_template_directory_uri();
     $version = time();
     $inFooter = false;
@@ -11,7 +21,7 @@ function theme_enqueue_scripts() {
     wp_enqueue_script('service-list', $theme_directory . '/src/js/service-list.js', [], $version, $inFooter);
     wp_enqueue_script('vendor', $theme_directory . '/src/js/vendor/modernizr-3.11.2.min.js', [], $version, $inFooter);
     wp_enqueue_script('plugins', $theme_directory . '/src/js/plugins.js', [], $version, $inFooter);
-    
+
     add_filter( 'script_loader_tag', 'add_type_module', 10, 3 );
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');

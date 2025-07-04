@@ -24,8 +24,8 @@
     $about_us = get_field('about_us', 'option');
     $contact_phone = get_field('contact_phone', 'option') ?? '';
     $google_map_link = get_field('google_map_link', 'option') ?? '';
-    $working_hours_structured   = get_field('working_hours_structured') ?? [];
-    $service_background_card = get_field('service_background_card');
+    $working_hours_structured   = get_field('working_hours_structured', 'option') ?? [];
+    $service_background_card = get_field('service_background_card', 'option') ?? [];
     $social_links = get_field('social_links', 'option') ?? [];
 
 
