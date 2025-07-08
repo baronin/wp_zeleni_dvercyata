@@ -2,7 +2,10 @@
 Thumbs.db
 .idea/
 
-/wp-config.php
+# Ignore WordPress core files and directories
+@eaDir/
+
+wp-config.php
 /.htaccess
 /robot.txt
 .vscode/
@@ -19,7 +22,7 @@ wp-content/plugins/*
 
 wp-content/cache/*
 wp-content/upgrade/*
-wp-content/uploads/*
+wp-content/uploads/
 wp-content/backup-*/**
 wp-content/backups/*
 wp-content/wp-cache-config.php
@@ -36,3 +39,6 @@ node_modules/
 *.sql
 *.sqlite
 *.wpress
+debug.log
+# Ignore vendor dependencies (if you use Composer)
+/vendor/
