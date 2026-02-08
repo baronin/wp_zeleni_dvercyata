@@ -18,7 +18,7 @@ $about_us = $options['about_us'];
             <img src="<?php echo get_template_directory_uri() . '/src/img/logo.png'; ?>" alt="логотип зелені дверцята">
           </picture>
         </div>
-        <h1><?php echo get_bloginfo('description'); ?></h1>
+        <h1 class="hero__title"><?php echo get_bloginfo('description'); ?></h1>
         <?php if ($main_about_us) { ?>
           <?php echo $main_about_us; ?>
         <?php } ?>
