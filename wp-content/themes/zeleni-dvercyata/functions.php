@@ -1,4 +1,5 @@
 <?php
+require get_template_directory() . '/acf-fallback.php';
 require get_template_directory() . '/menu-register.php';
 require get_template_directory() . '/enqueue-scripts.php';
 require get_template_directory() . '/cleanup.php';
