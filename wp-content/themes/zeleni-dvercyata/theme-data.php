@@ -18,6 +18,23 @@
 
     $phone_href = '';
 
+    // Если ACF недоступен (плагин выключен/не установлен), возвращаем безопасные значения.
+    if (!function_exists('get_field')) {
+        $cached_options = [
+            'contact_info' => [],
+            'main_about_us' => [],
+            'about_us' => [],
+            'contact_phone' => '',
+            'phone_href' => '',
+            'google_map_link' => '',
+            'working_hours_structured' => [],
+            'service_background_card' => [],
+            'social_links' => [],
+        ];
+
+        return $cached_options;
+    }
+
     // Если данные еще не были получены, получаем их из страницы настроек ACF
     $contact_info = get_field('contact_info', 'option');
     $main_about_us = get_field('main_about_us', 'option');
